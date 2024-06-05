@@ -28,6 +28,7 @@
           <td id="comment_counter">
             <%= render "book_comments/counter", book: @book %>
           </td>
+          <td>閲覧数: <%= @book.read_counts.count %></td>
         </tr>
       </table>
       <div id="comment_index">
